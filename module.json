@@ -1,0 +1,34 @@
+{
+  "id": "spirit77-pbta",
+  "title": "Spirit of '77 for PbtA",
+  "description": "Configures the PbtA system for Spirit of '77 with proper attributes, roles, and stories",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "Spirit of '77 Fan Module"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "pbta",
+        "type": "dependency",
+        "compatibility": {}
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/spirit77.js"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ]
+}

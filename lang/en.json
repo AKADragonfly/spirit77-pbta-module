@@ -1,0 +1,28 @@
+{
+  "SPIRIT77": {
+    "Title": "Spirit of '77",
+    "Attributes": {
+      "might": "Might",
+      "hustle": "Hustle",
+      "brains": "Brains", 
+      "smooth": "Smooth",
+      "soul": "Soul"
+    },
+    "Fields": {
+      "role": "Role",
+      "story": "Story",
+      "buzz": "Buzz",
+      "hook": "Hook",
+      "thang": "Thang",
+      "stress": "Stress",
+      "harm": "Harm"
+    },
+    "Moves": {
+      "basic": "Basic Moves",
+      "role": "Role Moves",
+      "story": "Story Moves"
+    },
+    "RoleExamples": "Examples: Sleuth, Gonzo Journalist, Stuntman, Bounty Hunter, Greasemonkey",
+    "StoryExamples": "Examples: Kung Fu, Holy Roller, Nature Boy/Girl, The Visitor"
+  }
+}

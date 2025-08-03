@@ -9,26 +9,20 @@
   },
   "authors": [
     {
-      "name": "Spirit of '77 Fan Module"
+      "name": "Spirit77 Module",
+      "url": "https://github.com/AKADragonfly/spirit77-pbta-module"
     }
   ],
-  "relationships": {
-    "systems": [
-      {
-        "id": "pbta",
-        "type": "dependency",
-        "compatibility": {}
-      }
-    ]
-  },
-  "esmodules": [
-    "scripts/spirit77.js"
-  ],
+  "systems": ["pbta"],
+  "esmodules": ["scripts/spirit77.js"],
   "languages": [
     {
       "lang": "en",
       "name": "English",
       "path": "lang/en.json"
     }
-  ]
+  ],
+  "url": "https://github.com/AKADragonfly/spirit77-pbta-module",
+  "manifest": "https://raw.githubusercontent.com/AKADragonfly/spirit77-pbta-module/main/module.json",
+  "download": "https://github.com/AKADragonfly/spirit77-pbta-module/archive/main.zip"
 }

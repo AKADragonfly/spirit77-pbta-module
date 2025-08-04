@@ -209,3 +209,14 @@ Hooks.once('pbtaSheetConfig', () => {
   
   console.log('Spirit of 77 | Configuration complete');
 });
+/**
+ * Spirit of '77 Module for PbtA System
+ * 
+ * Built on the PbtA system by asacolips-projects
+ * https://github.com/asacolips-projects/pbta
+ * 
+ * Implementation patterns inspired by Monsters of the Week module by Rangertheman
+ * https://github.com/Rangertheman/motw-for-pbta
+ * 
+ * Licensed under MIT License
+ */

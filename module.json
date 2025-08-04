@@ -1,28 +1,19 @@
 {
   "id": "spirit77-pbta",
   "title": "Spirit of '77 for PbtA",
-  "description": "Configures the PbtA system for Spirit of '77 with proper attributes, roles, and stories",
-  "version": "1.0.0",
-  "compatibility": {
-    "minimum": "12",
-    "verified": "13"
-  },
+  "description": "Configures the PbtA system for Spirit of '77 with proper attributes, roles, and stories. Built on the PbtA system by asacolips-projects and inspired by the Monsters of the Week module.",
   "authors": [
     {
       "name": "Spirit77 Module",
       "url": "https://github.com/AKADragonfly/spirit77-pbta-module"
-    }
-  ],
-  "systems": ["pbta"],
-  "esmodules": ["scripts/spirit77.js"],
-  "languages": [
+    },
     {
-      "lang": "en",
-      "name": "English",
-      "path": "lang/en.json"
+      "name": "asacolips (PbtA System)",
+      "url": "https://github.com/asacolips-projects/pbta"
+    },
+    {
+      "name": "Rangertheman (MotW Module Reference)",
+      "url": "https://github.com/Rangertheman/motw-for-pbta"
     }
-  ],
-  "url": "https://github.com/AKADragonfly/spirit77-pbta-module",
-  "manifest": "https://raw.githubusercontent.com/AKADragonfly/spirit77-pbta-module/main/module.json",
-  "download": "https://github.com/AKADragonfly/spirit77-pbta-module/archive/main.zip"
+  ]
 }

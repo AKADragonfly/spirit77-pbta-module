@@ -4,6 +4,9 @@ Hooks.once('pbtaSheetConfig', () => {
   // Disable the sheet config form since we're providing our own
   game.settings.set('pbta', 'sheetConfigOverride', true);
   
+  // Clear any existing configuration
+  game.pbta.sheetConfig = null;
+  
   // Configure the PbtA system for Spirit of '77
   game.pbta.sheetConfig = {
     "rollFormula": "2d6",
@@ -58,9 +61,17 @@ Hooks.once('pbtaSheetConfig', () => {
           }
         },
         "attrTop": {
-          "playbook": {
-            "label": "Role / Story",
-            "description": "Enter as: Role / Story (e.g., 'Sleuth / Kung Fu')",
+          "role": {
+            "label": "Role",
+            "description": "Your character's occupation or archetype",
+            "customLabel": false,
+            "userLabel": false,
+            "type": "Text",
+            "value": ""
+          },
+          "story": {
+            "label": "Story", 
+            "description": "Your character's background or special nature",
             "customLabel": false,
             "userLabel": false,
             "type": "Text",
@@ -188,6 +199,13 @@ Hooks.once('pbtaSheetConfig', () => {
       }
     }
   };
+  
+  // Force refresh any open sheets
+  game.actors.forEach(actor => {
+    if (actor.sheet.rendered) {
+      actor.sheet.render(true);
+    }
+  });
   
   console.log('Spirit of 77 | Configuration complete');
 });

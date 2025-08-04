@@ -33,23 +33,28 @@ Hooks.once('pbtaSheetConfig', () => {
         "stats": {
           "might": {
             "label": "Might",
-            "value": 0
+            "value": 0,
+            "toggle": false
           },
           "hustle": {
             "label": "Hustle", 
-            "value": 0
+            "value": 0,
+            "toggle": false
           },
           "brains": {
             "label": "Brains",
-            "value": 0
+            "value": 0,
+            "toggle": false
           },
           "smooth": {
             "label": "Smooth",
-            "value": 0
+            "value": 0,
+            "toggle": false
           },
           "soul": {
             "label": "Soul",
-            "value": 0
+            "value": 0,
+            "toggle": false
           }
         },
         "attrTop": {
@@ -74,8 +79,9 @@ Hooks.once('pbtaSheetConfig', () => {
             "description": "Physical damage and injury (0-8 wound levels)",
             "customLabel": false,
             "userLabel": false,
-            "type": "Number",
-            "value": 0
+            "type": "Resource",
+            "value": 0,
+            "max": 8
           },
           "stress": {
             "label": "Stress",
@@ -150,8 +156,9 @@ Hooks.once('pbtaSheetConfig', () => {
             "description": "NPCs typically have 5 wound levels",
             "customLabel": false,
             "userLabel": false,
-            "type": "Number",
-            "value": 0
+            "type": "Resource",
+            "value": 0,
+            "max": 5
           }
         },
         "attrLeft": {

@@ -33,60 +33,32 @@ Hooks.once('pbtaSheetConfig', () => {
         "stats": {
           "might": {
             "label": "Might",
-            "value": 0,
-            "toggle": {
-              "label": "Broken Down",
-              "modifier": -1
-            }
+            "value": 0
           },
           "hustle": {
             "label": "Hustle", 
-            "value": 0,
-            "toggle": {
-              "label": "Gimped Up",
-              "modifier": -1
-            }
+            "value": 0
           },
           "brains": {
             "label": "Brains",
-            "value": 0,
-            "toggle": {
-              "label": "Punch-drunk",
-              "modifier": -1
-            }
+            "value": 0
           },
           "smooth": {
             "label": "Smooth",
-            "value": 0,
-            "toggle": {
-              "label": "Hard to Look At",
-              "modifier": -1
-            }
+            "value": 0
           },
           "soul": {
             "label": "Soul",
-            "value": 0,
-            "toggle": {
-              "label": "Whitebread",
-              "modifier": -1
-            }
+            "value": 0
           }
         },
         "attrTop": {
-          "role": {
-            "label": "Role",
-            "description": "Your character's occupation or archetype (Sleuth, Gonzo Journalist, etc.)",
+          "playbook": {
+            "label": "Role / Story",
+            "description": "Enter as: Role / Story (e.g., 'Sleuth / Kung Fu')",
             "customLabel": false,
             "userLabel": false,
             "type": "Text",
-            "value": ""
-          },
-          "story": {
-            "label": "Story",
-            "description": "Your character's background or special nature (Kung Fu, Holy Roller, etc.)",
-            "customLabel": false,
-            "userLabel": false,
-            "type": "Text", 
             "value": ""
           },
           "buzz": {
@@ -97,6 +69,14 @@ Hooks.once('pbtaSheetConfig', () => {
             "type": "Text",
             "value": ""
           },
+          "harm": {
+            "label": "Harm",
+            "description": "Physical damage and injury (0-8 wound levels)",
+            "customLabel": false,
+            "userLabel": false,
+            "type": "Number",
+            "value": 0
+          },
           "stress": {
             "label": "Stress",
             "description": "Mental and emotional pressure",
@@ -106,15 +86,6 @@ Hooks.once('pbtaSheetConfig', () => {
             "value": 0,
             "max": 5,
             "steps": [false, false, false, false, false]
-          },
-          "harm": {
-            "label": "Harm",
-            "description": "Physical damage and injury (0-8 wound levels)",
-            "customLabel": false,
-            "userLabel": false,
-            "type": "Resource",
-            "value": 0,
-            "max": 8
           }
         },
         "attrLeft": {
@@ -179,9 +150,8 @@ Hooks.once('pbtaSheetConfig', () => {
             "description": "NPCs typically have 5 wound levels",
             "customLabel": false,
             "userLabel": false,
-            "type": "Resource",
-            "value": 0,
-            "max": 5
+            "type": "Number",
+            "value": 0
           }
         },
         "attrLeft": {

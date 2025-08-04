@@ -2,7 +2,7 @@
   "id": "spirit77-pbta",
   "title": "Spirit of '77 for PbtA",
   "description": "Configures the PbtA system for Spirit of '77 with proper attributes, roles, and stories",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "compatibility": {
     "minimum": "12",
     "verified": "13"
@@ -14,7 +14,7 @@
     }
   ],
   "systems": ["pbta"],
-  "esmodules": ["scripts/spirit77.js"],
+  "esmodules": ["scripts/spirit77-v2.js"],
   "languages": [
     {
       "lang": "en",

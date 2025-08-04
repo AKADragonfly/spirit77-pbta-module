@@ -8,8 +8,8 @@ Hooks.once('pbtaSheetConfig', () => {
   game.pbta.sheetConfig = {
     "rollFormula": "2d6",
     "statToggle": {
-      "label": "Highlight",
-      "modifier": 1
+      "label": "Debuff",
+      "modifier": -1
     },
     "rollResults": {
       "failure": {
@@ -33,29 +33,49 @@ Hooks.once('pbtaSheetConfig', () => {
         "stats": {
           "might": {
             "label": "Might",
-            "value": 0
+            "value": 0,
+            "toggle": {
+              "label": "Broken Down",
+              "modifier": -1
+            }
           },
           "hustle": {
             "label": "Hustle", 
-            "value": 0
+            "value": 0,
+            "toggle": {
+              "label": "Gimped Up",
+              "modifier": -1
+            }
           },
           "brains": {
             "label": "Brains",
-            "value": 0
+            "value": 0,
+            "toggle": {
+              "label": "Punch-drunk",
+              "modifier": -1
+            }
           },
           "smooth": {
             "label": "Smooth",
-            "value": 0
+            "value": 0,
+            "toggle": {
+              "label": "Hard to Look At",
+              "modifier": -1
+            }
           },
           "soul": {
             "label": "Soul",
-            "value": 0
+            "value": 0,
+            "toggle": {
+              "label": "Whitebread",
+              "modifier": -1
+            }
           }
         },
         "attrTop": {
           "role": {
             "label": "Role",
-            "description": "Your character's occupation or archetype",
+            "description": "Your character's occupation or archetype (Sleuth, Gonzo Journalist, etc.)",
             "customLabel": false,
             "userLabel": false,
             "type": "Text",
@@ -63,7 +83,7 @@ Hooks.once('pbtaSheetConfig', () => {
           },
           "story": {
             "label": "Story",
-            "description": "Your character's background or special nature",
+            "description": "Your character's background or special nature (Kung Fu, Holy Roller, etc.)",
             "customLabel": false,
             "userLabel": false,
             "type": "Text", 
@@ -71,7 +91,7 @@ Hooks.once('pbtaSheetConfig', () => {
           },
           "buzz": {
             "label": "Buzz",
-            "description": "Your character's motivation",
+            "description": "Your character's motivation (one word)",
             "customLabel": false,
             "userLabel": false,
             "type": "Text",
@@ -89,13 +109,12 @@ Hooks.once('pbtaSheetConfig', () => {
           },
           "harm": {
             "label": "Harm",
-            "description": "Physical damage and injury",
+            "description": "Physical damage and injury (0-8 wound levels)",
             "customLabel": false,
             "userLabel": false,
-            "type": "Clock",
+            "type": "Resource",
             "value": 0,
-            "max": 6,
-            "steps": [false, false, false, false, false, false]
+            "max": 8
           }
         },
         "attrLeft": {
@@ -114,6 +133,14 @@ Hooks.once('pbtaSheetConfig', () => {
             "userLabel": false,
             "type": "LongText",
             "value": ""
+          },
+          "harmLevels": {
+            "label": "Wound Levels",
+            "description": "Track specific wound conditions",
+            "customLabel": false,
+            "userLabel": false,
+            "type": "LongText",
+            "value": "0: Healthy\n1: Bruised\n2: Bloodied\n3: Bruised and Bloodied\n4: Broken (Something Less)\n5: Down (bleeding out)\n6: Dying\n7: Dead\n8: Destroyed"
           },
           "notes": {
             "label": "Notes",
@@ -149,12 +176,12 @@ Hooks.once('pbtaSheetConfig', () => {
         "attrTop": {
           "harm": {
             "label": "Harm",
-            "description": null,
+            "description": "NPCs typically have 5 wound levels",
             "customLabel": false,
             "userLabel": false,
             "type": "Resource",
             "value": 0,
-            "max": 3
+            "max": 5
           }
         },
         "attrLeft": {
